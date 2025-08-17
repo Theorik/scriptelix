@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum — Scriptelix</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container inner">
+      <div class="brand"><div class="logo"></div> Scriptelix</div>
+      <nav class="navlinks">
+        <a href="index.html" class="">Accueil</a>
+        <a href="sondages.html" class="">Sondages</a>
+        <a href="resultats.html" class="">Résultats</a>
+        <a href="forum.html" class="active">Forum</a>
+        <a href="profil.html" class="">Profil</a>
+        <a href="admin.html" class="">Admin</a>
+        <a href="login.html">Connexion</a>
+        <a href="register.html">Inscription</a>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+  <div class="card">
+    <h3>Commentaires par sondage</h3>
+    <div class="flex">
+      <select id="forumSurvey"></select>
+    </div>
+    <div id="comments"></div>
+    <div id="commentBox" class="hidden">
+      <label for="commentInput">Votre avis</label>
+      <textarea id="commentInput" rows="3" placeholder="Exprimez un avis argumenté..."></textarea>
+      <button id="btnComment">Publier</button>
+    </div>
+    <p id="loginHint" class="muted">Connectez-vous pour commenter.</p>
+  </div>
+
+    <div class="footer">© 2025 Scriptelix — Plateforme de sondages</div>
+  </div>
+</body>
+</html>

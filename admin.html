@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — Scriptelix</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container inner">
+      <div class="brand"><div class="logo"></div> Scriptelix</div>
+      <nav class="navlinks">
+        <a href="index.html" class="">Accueil</a>
+        <a href="sondages.html" class="">Sondages</a>
+        <a href="resultats.html" class="">Résultats</a>
+        <a href="forum.html" class="">Forum</a>
+        <a href="profil.html" class="">Profil</a>
+        <a href="admin.html" class="active">Admin</a>
+        <a href="login.html">Connexion</a>
+        <a href="register.html">Inscription</a>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+  <div class="card">
+    <h3>Créer un sondage</h3>
+    <label>Titre</label><input id="sTitle" />
+    <label>Question</label><input id="sQuestion" />
+    <label>Options (une par ligne)</label><textarea id="sOptions" rows="4"></textarea>
+    <div class="flex">
+      <label><input type="checkbox" id="sPublic" checked> Public</label>
+      <button id="btnCreateSurvey">Créer</button>
+    </div>
+    <p class="muted">Réservé aux administrateurs.</p>
+  </div>
+
+  <div class="card">
+    <h3>Gestion des rôles</h3>
+    <div class="flex">
+      <input id="roleUserId" placeholder="ID utilisateur" />
+      <select id="roleValue">
+        <option value="true">Admin</option>
+        <option value="false">User</option>
+      </select>
+      <button id="btnSetRole">Appliquer</button>
+    </div>
+  </div>
+
+    <div class="footer">© 2025 Scriptelix — Plateforme de sondages</div>
+  </div>
+</body>
+</html>

@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scriptelix</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil — Scriptelix</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <h1>Bienvenue sur Scriptelix</h1>
-    <p>Ceci est la première version de ton site publié avec GitHub Pages 🚀</p>
+  <div class="navbar">
+    <div class="container inner">
+      <div class="brand"><div class="logo"></div> Scriptelix</div>
+      <nav class="navlinks">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="sondages.html" class="">Sondages</a>
+        <a href="resultats.html" class="">Résultats</a>
+        <a href="forum.html" class="">Forum</a>
+        <a href="profil.html" class="">Profil</a>
+        <a href="admin.html" class="">Admin</a>
+        <a href="login.html">Connexion</a>
+        <a href="register.html">Inscription</a>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+  <section class="hero">
+    <span class="badge">Neutre • Clair • Mobile</span>
+    <h1>Scriptelix</h1>
+    <p>Plateforme de sondages pour comprendre notre génération — style sobre et fonctionnel.</p>
+    <div class="flex center" style="justify-content:center;margin-top:16px">
+      <a class="btn" href="sondages.html">Répondre à un sondage</a>
+      <a class="btn btn-outline" href="resultats.html">Voir les résultats</a>
+    </div>
+  </section>
+
+  <div class="grid cards-3">
+    <div class="card">
+      <h3>Transparence</h3>
+      <p>Méthodologie claire, résultats bruts et graphiques lisibles.</p>
+    </div>
+    <div class="card">
+      <h3>Accès rapide</h3>
+      <p>Répondez sans compte via un lien, ou connectez-vous pour un profil.</p>
+    </div>
+    <div class="card">
+      <h3>Communauté</h3>
+      <p>Commentez et débattez sous chaque sondage (compte requis).</p>
+    </div>
+  </div>
+
+    <div class="footer">© 2025 Scriptelix — Plateforme de sondages belge</div>
+  </div>
 </body>
 </html>

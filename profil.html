@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil — Scriptelix</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container inner">
+      <div class="brand"><div class="logo"></div> Scriptelix</div>
+      <nav class="navlinks">
+        <a href="index.html" class="">Accueil</a>
+        <a href="sondages.html" class="">Sondages</a>
+        <a href="resultats.html" class="">Résultats</a>
+        <a href="forum.html" class="">Forum</a>
+        <a href="profil.html" class="active">Profil</a>
+        <a href="admin.html" class="">Admin</a>
+        <a href="login.html">Connexion</a>
+        <a href="register.html">Inscription</a>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+  <div class="card">
+    <h3>Mon profil</h3>
+    <div id="meBox"></div>
+  </div>
+
+  <div class="card">
+    <h3>Recherche d’utilisateurs</h3>
+    <input id="searchUserInput" placeholder="Chercher par pseudo..." />
+    <button id="btnSearchUser">Rechercher</button>
+    <div id="searchResults"></div>
+  </div>
+
+    <div class="footer">© 2025 Scriptelix — Plateforme de sondages</div>
+  </div>
+</body>
+</html>

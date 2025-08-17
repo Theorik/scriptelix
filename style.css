@@ -1,16 +1,84 @@
-body {
-    background-color: black;
-    color: #cd6e57;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
+/* style.css — Thème sombre Scriptelix (proche DraftBot) */
+:root{
+  --accent:#cd6e57;      /* titres, boutons actifs */
+  --text:#e6e6e6;        /* texte principal lisible sur fond sombre */
+  --muted:#b2b8bf;       /* texte secondaire (paragraphes) */
+  --bg:#1f2428;          /* fond global (gris très sombre, pas noir absolu) */
+  --card:#262c31;        /* fond des cartes/sections */
+  --border:#343b41;      /* bordures discrètes */
 }
 
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+*{box-sizing:border-box}
+html,body{
+  margin:0; padding:0;
+  font-family:Inter,Arial,Helvetica,sans-serif;
+  background:var(--bg); color:var(--text);
 }
 
-p {
-    font-size: 1.2em;
+/* Layout */
+.container{max-width:1080px;margin:0 auto;padding:20px}
+
+/* Navbar */
+.navbar{background:var(--card);border-bottom:1px solid var(--border)}
+.navbar .inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700}
+.brand .logo{width:28px;height:28px;border-radius:6px;background:var(--accent)}
+
+/* Nav links */
+.navlinks{display:flex;gap:14px;flex-wrap:wrap}
+.navlinks a{
+  padding:10px 12px;text-decoration:none;color:var(--text);border-radius:10px
 }
+.navlinks a.active, .btn{background:var(--accent);color:#1f2428;font-weight:600}
+.navlinks a:hover{background:#2c3338}
+
+/* Titres / texte */
+h1,h2,h3{color:var(--accent);margin:0 0 10px}
+p,li,.muted{color:var(--muted)}
+strong,b{color:var(--text)}
+
+/* Hero / Cards */
+.hero{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:16px;padding:40px;margin:24px 0;text-align:left
+}
+.grid{display:grid;gap:16px}
+.cards-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:16px;padding:18px
+}
+.card h3{margin:0 0 8px}
+
+/* Formulaires */
+input,select,textarea{
+  width:100%;padding:12px;border:1px solid var(--border);
+  border-radius:12px;background:#1b2024;color:var(--text);margin:6px 0 12px
+}
+label{font-size:14px;color:var(--muted)}
+input::placeholder, textarea::placeholder{color:#8d9aa6}
+
+/* Boutons */
+button{padding:10px 14px;border:none;border-radius:12px;cursor:pointer}
+.btn{display:inline-block;padding:12px 16px;border-radius:12px;text-decoration:none}
+.btn-outline{
+  background:transparent;border:1px solid var(--accent);color:var(--accent)
+}
+.btn-outline:hover{background:#2c3338}
+
+/* Badges / helper */
+.badge{
+  display:inline-block;padding:6px 10px;border-radius:999px;
+  background:#2c3338;border:1px solid var(--border);color:var(--accent);font-size:12px
+}
+
+/* Tableaux */
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{border-bottom:1px solid var(--border);padding:10px 8px;text-align:left}
+.table th{font-weight:600;color:var(--text)}
+
+/* Utils */
+.flex{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.hidden{display:none}
+.center{text-align:center}
+.footer{margin:32px 0;color:var(--muted);text-align:center}
